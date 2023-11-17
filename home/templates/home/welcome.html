@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Welcome to transcendence!</h1>
+
+<p>Today is {{today}}</p>
+
+{% comment %} <a href="{% url 'notes.list' %}" class="btn btn-primary">My notes</a> {% endcomment %}
+<a href="{% url 'game.play' %}" class="btn btn-primary">Play pong</a>
+
+{% endblock %}
